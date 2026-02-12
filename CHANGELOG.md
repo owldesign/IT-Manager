@@ -5,6 +5,22 @@ All notable changes to IT Manager will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2026-02-12
+
+### Added
+- System-wide global hotkey (default `⇧⌘Space`) to summon Spotlight search from any app
+- Configurable shortcut recorder in Settings to customize the global hotkey
+- Menu bar status item with quick access to search, lock vault, and quit
+- App stays running in the menu bar when the window is closed (`⌘Q` hides, menu bar "Quit" exits)
+- Spotlight search results now open the main window and navigate to the selected record
+
+### Fixed
+- Global hotkey now works reliably system-wide using CGEvent tap with automatic fallback
+- Shortcut recorder no longer freezes the Settings window
+- Menu bar icon no longer duplicates or disappears on window close/reopen cycle
+- Search result double-click now correctly opens the app even when the main window is hidden
+- Spotlight search panel no longer drifts upward on repeated open/close
+
 ## [1.0.0] - 2026-02-10
 
 ### Added

@@ -32,6 +32,8 @@
 - **Touch ID unlock** — biometric authentication with Keychain integration
 - **Guided onboarding** — set up your vault and first company in a seamless two-step flow
 - **Global fuzzy search** — hit `Cmd+K` for a Spotlight-style overlay that searches everything
+- **System-wide hotkey** — configurable global shortcut (default `⇧⌘Space`) to summon search from any app
+- **Menu bar app** — lives in your menu bar for quick access; closing the window keeps the app running
 - **TOTP code generation** — built-in authenticator with live countdown timer
 - **Password generator** — cryptographic generation with configurable length and character sets
 - **CSV/JSON import & export** — painless migrations for all entity types
@@ -71,7 +73,8 @@ xattr -cr "/Applications/IT Manager.app"
 
 | Shortcut | Action |
 |----------|--------|
-| `⌘K` | Global search |
+| `⇧⌘Space` | System-wide Spotlight search (configurable) |
+| `⌘K` | In-app global search |
 | `⌘N` | New record |
 | `⌘0` | Dashboard |
 | `⌘1` – `⌘7` | Navigate entity types |
