@@ -433,7 +433,33 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Touch ID</h3>
                     <p class="text-fortress-muted leading-relaxed text-[15px]">
-                        Unlock your vault with biometrics. Auto-lock on window close for zero-trust security.
+                        Unlock your vault with biometrics. Auto-lock on idle for zero-trust security.
+                    </p>
+                </div>
+
+                <!-- Card 7: Custom Fields -->
+                <div class="card-glow p-8">
+                    <div class="text-4xl mb-5">
+                        <svg class="w-10 h-10 text-fortress-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Custom Fields</h3>
+                    <p class="text-fortress-muted leading-relaxed text-[15px]">
+                        Define your own fields per entity type. Mark any field as sensitive for automatic encryption.
+                    </p>
+                </div>
+
+                <!-- Card 8: Guided Onboarding -->
+                <div class="card-glow p-8">
+                    <div class="text-4xl mb-5">
+                        <svg class="w-10 h-10 text-fortress-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Quick Setup</h3>
+                    <p class="text-fortress-muted leading-relaxed text-[15px]">
+                        Create your vault and add your first company in seconds. No configuration needed to get started.
                     </p>
                 </div>
             </div>
@@ -455,7 +481,7 @@
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">Two-key encryption<br class="hidden sm:block"> you can trust</h2>
 
                 <p class="text-fortress-muted text-lg leading-relaxed mb-10 max-w-2xl">
-                    Even if the database file is compromised, sensitive fields remain independently encrypted. Your data is protected at every layer.
+                    600,000 PBKDF2 iterations protect your master password. HMAC-SHA256 verification confirms correctness before unlocking. Even if the database file is compromised, sensitive fields remain independently encrypted.
                 </p>
 
                 <!-- Encryption Flow Diagram -->

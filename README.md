@@ -27,8 +27,10 @@
 ## Features
 
 - **8 entity types** — Companies, Employees, Equipment, Credentials, Subscriptions, Service Providers, Credit Cards, Secure Notes
+- **Custom fields** — define your own fields per entity type, with optional field-level encryption for sensitive data
 - **AES-256-GCM encryption** — two-key architecture with database-level DEK + field-level FEK
 - **Touch ID unlock** — biometric authentication with Keychain integration
+- **Guided onboarding** — set up your vault and first company in a seamless two-step flow
 - **Global fuzzy search** — hit `Cmd+K` for a Spotlight-style overlay that searches everything
 - **TOTP code generation** — built-in authenticator with live countdown timer
 - **Password generator** — cryptographic generation with configurable length and character sets
@@ -44,13 +46,14 @@
 
 IT Manager uses a layered encryption design:
 
-1. **Master Password** is processed through PBKDF2 to derive a **Master Key**
+1. **Master Password** is processed through PBKDF2 (600,000 iterations) to derive a **Master Key**
 2. The Master Key is expanded via **HKDF** into two independent keys:
    - **DEK** (Database Encryption Key) — encrypts the entire SQLite database
    - **FEK** (Field Encryption Key) — additional AES-256-GCM encryption for sensitive fields
-3. **Keychain integration** with biometric access control for Touch ID unlock
-4. **Secure Enclave key wrapping** on Apple Silicon for tamper-resistant key storage
-5. **Memory zeroing** ensures sensitive data is cleared from RAM after use
+3. **HMAC-SHA256 verification** confirms the correct password before unlocking
+4. **Keychain integration** with biometric access control for Touch ID unlock
+5. **Secure Enclave key wrapping** on Apple Silicon for tamper-resistant key storage
+6. **Memory zeroing** ensures sensitive data is cleared from RAM after use
 
 ## Installation
 
