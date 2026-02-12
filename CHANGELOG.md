@@ -5,6 +5,11 @@ All notable changes to IT Manager will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.5] - 2026-02-12
+
+### Fixed
+- App version now displays correctly (was always showing "Version 1.0 (1)" due to hardcoded Info.plist values)
+
 ## [1.0.4] - 2026-02-12
 
 ### Fixed
