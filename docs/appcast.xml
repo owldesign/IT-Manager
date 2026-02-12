@@ -61,4 +61,20 @@
         type="application/octet-stream" />
     </item>
   </channel>
+      <item>
+        <title>Version 1.0.4</title>
+        <pubDate>Thu, 12 Feb 2026 19:25:13 +0000</pubDate>
+        <sparkle:version>4</sparkle:version>
+        <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <description><![CDATA[
+          <h2>What's New in 1.0.4</h2>
+          <p>See release notes on GitHub.</p>
+        ]]></description>
+        <enclosure
+          url="https://github.com/owldesign/IT-Manager/releases/download/v1.0.4/ITManager-1.0.4.dmg"
+          sparkle:edSignature="kdGRFI7e9pz50rmEBASa4sTxvJz9GKLjEW00gpD0uAoIuXJ35vMi1GTNCYRTaUop+rzRi0RG3pFBMUIDOTQUCg=="
+          length="7184187"
+          type="application/octet-stream" />
+      </item>
 </rss>
