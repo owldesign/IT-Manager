@@ -5,6 +5,12 @@ All notable changes to IT Manager will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2026-02-12
+
+### Fixed
+- "Quit IT Manager" from the menu bar now reliably exits the app
+- Sparkle auto-update signatures now validate correctly (fixed EdDSA extraction on macOS)
+
 ## [1.0.3] - 2026-02-12
 
 ### Added
@@ -20,7 +26,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Menu bar icon no longer duplicates or disappears on window close/reopen cycle
 - Search result double-click now correctly opens the app even when the main window is hidden
 - Spotlight search panel no longer drifts upward on repeated open/close
-- "Quit IT Manager" from the menu bar now reliably exits the app
 
 ## [1.0.0] - 2026-02-10
 
