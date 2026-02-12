@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Menu bar icon no longer duplicates or disappears on window close/reopen cycle
 - Search result double-click now correctly opens the app even when the main window is hidden
 - Spotlight search panel no longer drifts upward on repeated open/close
+- "Quit IT Manager" from the menu bar now reliably exits the app
 
 ## [1.0.0] - 2026-02-10
 
